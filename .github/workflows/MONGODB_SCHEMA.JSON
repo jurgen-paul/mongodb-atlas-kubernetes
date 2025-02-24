@@ -1,0 +1,102 @@
+{
+  "$jsonSchema" : {
+    "bsonType" : "object",
+    "properties" : {
+      "description" : {
+        "bsonType" : "string"
+      },
+      "_id" : {
+        "bsonType" : "objectId"
+      },
+      "categoryName" : {
+        "bsonType" : "string"
+      },
+      "categoryId" : {
+        "bsonType" : "int"
+      },
+      "picture" : {
+        "bsonType" : "binData"
+      },
+      "products" : {
+        "bsonType" : "array",
+        "items" : {
+          "bsonType" : "object",
+          "properties" : {
+            "unitPrice" : {
+              "bsonType" : "decimal"
+            },
+            "unitsInStock" : {
+              "bsonType" : "int"
+            },
+            "reorderLevel" : {
+              "bsonType" : "int"
+            },
+            "supplierId" : {
+              "bsonType" : "int"
+            },
+            "productId" : {
+              "bsonType" : "int"
+            },
+            "supplier" : {
+              "bsonType" : "object",
+              "properties" : {
+                "country" : {
+                  "bsonType" : "string"
+                },
+                "supplierId" : {
+                  "bsonType" : "int"
+                },
+                "contactTitle" : {
+                  "bsonType" : "string"
+                },
+                "address" : {
+                  "bsonType" : "string"
+                },
+                "city" : {
+                  "bsonType" : "string"
+                },
+                "phone" : {
+                  "bsonType" : "string"
+                },
+                "contactName" : {
+                  "bsonType" : "string"
+                },
+                "companyName" : {
+                  "bsonType" : "string"
+                },
+                "postalCode" : {
+                  "bsonType" : "string"
+                },
+                "region" : {
+                  "bsonType" : "string"
+                },
+                "fax" : {
+                  "bsonType" : "string"
+                },
+                "homepage" : {
+                  "bsonType" : "string"
+                }
+              }
+            },
+            "quantityPerUnit" : {
+              "bsonType" : "string"
+            },
+            "discontinued" : {
+              "bsonType" : "int"
+            },
+            "productName" : {
+              "bsonType" : "string"
+            },
+            "categoryId" : {
+              "bsonType" : "int"
+            },
+            "unitsOnOrder" : {
+              "bsonType" : "int"
+            }
+          }
+        }
+      }
+    },
+    "title" : "categories"
+  }
+}
